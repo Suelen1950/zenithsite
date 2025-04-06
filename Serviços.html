@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nossos serviços</title>
+    <link rel="icon" href="fotos/sem fundo.png" type="image/png" sizes="64x64">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #FFFF;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #022636;
+        }
+
+        .redes {
+
+            height: auto;
+            float: right;
+            margin-right: 20px;
+            width: 45px;
+
+        }
+
+        footer {
+            background-color: #022636;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="Index.html.html">HOME</a>
+        <a href="Quem somos nós.html">QUEM SOMOS NÓS </a>
+        <a href="Serviços.html">SERVIÇOS</a>
+        <a href="Ajuda.html">AJUDA</a>
+    </nav>
+    <main>
+        <!-- Seção abaixo do menu com fundo embaçado e camada escura -->
+        <div style="position: relative; overflow: hidden; padding: 60px 0;">
+
+            <!-- Imagem de fundo embaçada -->
+            <div style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('fotos/logo\ zenith\ com\ fundo.jpg'); /* Substitua pelo caminho da sua imagem */
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px);
+      z-index: 0;
+    "></div>
+
+            <!-- Camada escura semi-transparente -->
+            <div style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(37, 89, 152, 0.282); /* transparência ajustada aqui */
+      z-index: 1;
+    "></div>
+
+            <!-- Conteúdo por cima da imagem -->
+            <div style="
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    ">
+
+                <!-- Produto 1 -->
+                <div style="text-align: center;">
+                    <div
+                        style="position: relative; width: 200px; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                        <img src="fotos/manutenção-removebg-preview.png" alt="Produto 1"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: center;
+          ">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 com botão -->
+                <div style="text-align: center;">
+                    <div
+                        style="position: relative; width: 200px; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                        <img src="fotos/fORNNECIMENTO-removebg-preview.png" alt="Produto 2"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: center;
+          ">
+
+                        </div>
+                    </div>
+                    <a href="produto2.html" style="
+          display: inline-block;
+          background-color: #022636(37, 89, 152, 0.282);
+          color: white;
+          padding: 8px 12px;
+          font-size: 14px;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background 0.3s;
+        " onmouseover="this.style.backgroundColor='#111827'" onmouseout="this.style.backgroundColor='#1f2937'">
+                        <i>Entre em contato</i>
+                    </a>
+                </div>
+
+                <div style="text-align: center;">
+                    <div
+                        style="position: relative; width: 190px; height: 190px; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                        <img src="fotos/SUSTENTAVEL-removebg-preview.png" alt="Produto 3"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: center;
+          ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>🛠 Manutenção Preventiva e Corretiva</h2>
+            <ul>
+                <li><b>Manutenção Preventiva:</b>Intervenções periódicas para identificar e corrigir possíveis falhas
+                    antes que causem interrupções, assegurando máxima eficiência operacional.</li>
+                <li><b>Manutenção Corretiva:</b>Atendimento técnico ágil para diagnóstico e reparo de falhas,
+                    restaurando rapidamente a funcionalidade dos sistemas.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🛠 Fornecimento de Componentes</h2>
+            <p>Disponibilizamos componentes sob demanda com qualidade garantida, ideais para upgrades, reposição ou projetos específicos:<p>
+            <ul>
+                <li><b>Venda de peças novas e recondicionadas</b></li>
+                <li><b>Substituição técnica de componentes obsoletos</b></li>
+                <li><b>Consultoria para compatibilidade e desempenho</b></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🛠 Programa de Retorno Sustentável</h2>
+            <ul>
+                <li><b>Descontos exclusivos:</b>Na aquisição de novos componentes ao devolver peças antigas.</li>
+
+                <li><b>Revenda de peças recondicionadas:</b>Na aquisição de novos componentes ao devolver peças antigas.</li>
+
+            </ul>
+            <br>
+            <a href="https://www.instagram.com/digital.zenith_25?igsh=N2NkNmdwbWlrbjR1" target="_blank">
+                <img src="fotos/insta-removebg-preview.png" alt="Foto simbolo do instagram" class="redes">
+                <div class="texto">
+            </a>
+            <p style="font-size: 12px; text-align: right;">Nossas redes: </p>
+            
+        </section>
+    </main>
+
+    </table>
+    <footer>
+        <p>&copy; Copyright 2025. Todos os direitos reservados.| Endereço: São José da Lapa/Centro,Antonio Ferreira
+            Saturnino,390, MG.</p>
+
+    </footer>
+</body>
+
+</html>

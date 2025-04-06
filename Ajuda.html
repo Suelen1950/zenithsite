@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajuda</title>
+  <link rel="icon" href="fotos/sem fundo.png" type="image/jpg" sizes="64x64">
+  <style>
+    /* Fundo com imagem e camada branca clara por cima */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('fotos/fundo ajuda.png') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4); /* clareia o fundo */
+      z-index: 0;
+    }
+
+    .conteudo {
+      position: relative;
+      z-index: 1; /* conteúdo aparece por cima da camada branca */
+      padding: 20px;
+      color: #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+     
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    h1 {
+      text-align: center;
+      color: #022636;
+    }
+
+    .faq-container {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background-color: rgba(255, 255, 255, 0.9); /* levemente transparente */
+      border-radius: 8px;
+      margin: 10px 0;
+      padding: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    footer {
+      background-color: #022636;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <div class="conteudo">
+    <nav>
+      <a href="Index.html.html">HOME</a>
+      <a href="Quem somos nós.html">QUEM SOMOS NÓS</a>
+      <a href="Serviços.html">SERVIÇOS</a>
+      <a href="Ajuda.html">AJUDA</a>
+    </nav>
+
+    <main>
+      <h1>Perguntas Frequentes</h1>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>Como faço para criar uma conta?</h3>
+          <div class="faq-answer">
+            Você pode clicar no botão "Registrar" no topo da página e preencher seus dados.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3>Vocês entregam em todo o Brasil?</h3>
+          <div class="faq-answer">
+            Sim! Fazemos entregas para todos os estados do Brasil com frete calculado automaticamente.
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3>Posso pagar com boleto?</h3>
+          <div class="faq-answer">
+            Sim, aceitamos boleto, Pix e cartão de crédito.
+          </div>
+        </div>
+      </div>
+    </main>
+
+  
+
+  <script>
+    const itensFaq = document.querySelectorAll('.faq-item');
+    itensFaq.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+    
+    </div>
+</body>
+</html>
